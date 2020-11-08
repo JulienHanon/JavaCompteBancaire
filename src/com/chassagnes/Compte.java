@@ -9,6 +9,12 @@ package com.chassagnes;
  */
 
 public class Compte {
+    /**
+     * Attributs privés.
+     * _numero : le numéro du compte.
+     * _nomTitulaire : le nom du titulaire du compte.
+     * _solde : le solde du compte.
+     */
     private String _numero;
     private String _nomTitulaire;
     private double _solde;
