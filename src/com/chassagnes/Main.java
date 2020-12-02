@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) {
+        /*
 	// write your code here
         int choix;
         Compte compte = new Compte("5112", "Michel", 0);
@@ -48,5 +50,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         double montant = sc.nextDouble();
         return montant;
+    }
+
+    */
+        Client julien = new Client("Hanon", "Julien", "23 Rue Pierre Semard");
+        Compte compte1 = new Compte("0707", "Julien", 1000);
+        Compte compte2 = new Compte("0606", "Julien", 1500);
+        julien.AjouterCompte(compte1);
+        julien.AjouterCompte(compte2);
+        System.out.println(julien);
+
     }
 }

@@ -42,7 +42,21 @@ public class Client {
         _adresse = adresse;
     }
     //endregion
+    public void AjouterCompte (Compte unCompte){
+        ListCompte.add(unCompte);
+    }
+    public void supprimerCompte (Compte unCompte){
+        ListCompte.remove(unCompte);
+    }
 
 
-
+    @Override
+    public String toString() {
+        return "Client{" +
+                "nom='" + _nom + '\'' +
+                ", prenom='" + _prenom + '\'' +
+                ", adresse='" + _adresse + '\'' +
+                ", ListCompte=" + ListCompte +
+                '}';
+    }
 }
