@@ -3,6 +3,8 @@ package com.chassagnes;
 public class CompteEpargne extends Compte  {
 
 
+    //region Attribut privée
+
     /**
      * Constructeur.
      * Crée une instance de compte bancaire.
@@ -11,17 +13,20 @@ public class CompteEpargne extends Compte  {
      * @param nomTitulaire : le nom du titulaire.
      * @param solde        : le solde du compte à sa création.
      */
-    //Attribut privée
-
     private double _txInteret;
+    //endregion
 
-    //Constructeur
 
+    //region Constructeur
     public CompteEpargne(String numero, String nomTitulaire, double solde, float txInteret) {
         super(numero, nomTitulaire, solde);
         _txInteret = txInteret;
     }
+    //endregion
 
+
+
+    //region methode
     public double get_txInteret(){
         return _txInteret;
 
@@ -33,4 +38,5 @@ public class CompteEpargne extends Compte  {
     public void CalculerInteret(){
         this.set_solde(this.get_txInteret()*this.get_solde());
     }
+    //endregion
 }

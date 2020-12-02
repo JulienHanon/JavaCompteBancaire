@@ -1,14 +1,10 @@
 package com.chassagnes;
 
-/**
- * Classe Compte.
- * permet de créer un compte et de le gérer :
- * déposer ou retirer de l'argent du compte.
- * @author : B. CHATAING.
- * created on  08/11/2020
- */
 
 public class Compte {
+
+    //region Attribut privée
+
     /**
      * Attributs privés.
      * _numero : le numéro du compte.
@@ -18,7 +14,9 @@ public class Compte {
     protected String _numero;
     protected String _nomTitulaire;
     protected double _solde;
+    //endregion
 
+    //region Constructeur
     /**
      * Constructeur.
      * Crée une instance de compte bancaire.
@@ -32,6 +30,9 @@ public class Compte {
         _nomTitulaire = nomTitulaire;
         _solde = solde;
     }
+    //endregion
+
+    //region Accesseur
 
     /**
      * Accesseur en lecture.
@@ -56,7 +57,9 @@ public class Compte {
     public double get_solde() {
         return _solde;
     }
+    //endregion
 
+    //region Setteur
     /**
      * Dépose un montant sur le compte.
      * Le solde est mis à jour.
@@ -78,6 +81,9 @@ public class Compte {
     public void set_solde(double montant){
         _solde = montant;
     }
+    //endregion
+
+    //region Methode
     /**
      * Rend le compte sous forme textuelle.
      * @return : l'objet courant Compte au format String.
@@ -87,4 +93,5 @@ public class Compte {
         compte = "Compte : "+_numero+" Titulaire : "+_nomTitulaire+" Solde : "+_solde;
         return compte;
     }
+    //endregion
 }
