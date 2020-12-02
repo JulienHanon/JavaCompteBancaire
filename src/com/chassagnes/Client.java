@@ -1,11 +1,14 @@
 package com.chassagnes;
 
+import java.util.ArrayList;
+
 public class Client {
 
     //region Attribut privée
     private String _nom;
     private String _prenom;
     private String _adresse;
+    private ArrayList<Compte> ListCompte;
     //endregion
 
 
@@ -16,6 +19,7 @@ public class Client {
         _nom = nom;
         _prenom = prenom;
         _adresse = adresse;
+        ListCompte = new ArrayList<Compte>();
     }
     //endregion
 
