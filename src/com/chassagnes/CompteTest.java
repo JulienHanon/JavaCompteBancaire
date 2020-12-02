@@ -37,6 +37,12 @@ class CompteTest {
         compte.retirer(50);
         assertEquals(450,compte.get_solde());
     }
+    @Test
+    void set_solde() {
+        compte.set_solde(200);
+        assertEquals(200,compte.get_solde());
+    }
+
 
     @Test
     void testToString() {

@@ -11,17 +11,17 @@ public class Main {
         do {
             choix = runMenu();
             switch (choix) {
-                case 1 : {
+                case 1 -> {
                     double montant = setMontant();
                     compte.deposer(montant);
+                    System.out.println(compte);
                 }
-                break;
-                case 2 : {
+                case 2 -> {
                     double montant = setMontant();
                     compte.retirer(montant);
+                    System.out.println(compte);
                 }
-                break;
-                case 3 : System.out.println(compte);
+                case 3 -> System.out.println(compte);
             }
         }while (choix != 4);
 

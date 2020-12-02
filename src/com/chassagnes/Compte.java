@@ -15,9 +15,9 @@ public class Compte {
      * _nomTitulaire : le nom du titulaire du compte.
      * _solde : le solde du compte.
      */
-    private String _numero;
-    private String _nomTitulaire;
-    private double _solde;
+    protected String _numero;
+    protected String _nomTitulaire;
+    protected double _solde;
 
     /**
      * Constructeur.
@@ -75,6 +75,9 @@ public class Compte {
         _solde -= montant;
     }
 
+    public void set_solde(double montant){
+        _solde = montant;
+    }
     /**
      * Rend le compte sous forme textuelle.
      * @return : l'objet courant Compte au format String.
